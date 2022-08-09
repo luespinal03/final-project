@@ -6,7 +6,7 @@
 #nwa {
     height: 400px;
     width: 450px;
-    margin-right: 23px;
+    margin-right: 30px;
 
 }
 
@@ -17,18 +17,91 @@
 
 #words {
     font-family: -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    margin-left: 200px;
+    margin-left: 550px;
     font-size: 50px;
-    color: #b69121;
+    color: #ffe169;
 }
 
 #welcome {
     margin-left: 700px;
     font-size: 50px;
-    color:#b69121;
-} 
+    color: #ffe169;
+}
 
 
 form {
     margin-left: 800px;
+}
+
+#questionaire {
+    margin-top: 300px;
+    margin-left: 550px;
+}
+
+#description {
+    margin-left: 550px;
+}
+
+.likes {
+    margin-left: 550px;
+}
+
+#movies {
+    margin-left: 175px;
+}
+
+#blogging {
+    margin-left: 180px;
+}
+
+#reading {
+    margin-left: 163px;
+}
+
+#entrepreneurship {
+    margin-left: 82px;
+}
+
+#tech {
+    margin-left: 176px;
+}
+
+#gaming {
+    margin-left: 150px;
+}
+
+#dancing {
+    margin-left: 136px;
+}
+
+#athlete {
+    margin-left: 142px;
+}
+
+#music {
+    margin-left: 65px;
+}
+
+#traveling {
+    margin-left: 113px;
+}
+
+#firstColumn {
+    font-size: larger;
+}
+
+#secondColumn {
+    font-size: larger;
+}
+
+#thirdColumn {
+    font-size: larger;
+}
+
+#fourthColumn {
+    font-size: larger;
+}
+
+#fifthColumn {
+    font-size: larger;
 }
