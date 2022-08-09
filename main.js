@@ -1,7 +1,12 @@
-//index signup queries
+//landing page queries
 const signUpSubmit = document.querySelector('#signUpSubmit')
 const signUpEmail = document.querySelector('#signUpEmail')
 const signUpPassword = document.querySelector('#signUpPassword')
+
+//login page queries
+const logInSubmit = document.querySelector('#logInSubmit')
+const logInEmail = document.querySelector('#logInEmail')
+const logInPassword = document.querySelector('#logInPassword')
 let user1 = {
     email: 'luisespinal296@yahoo.com',
     password: 'thisbetterwork'
@@ -20,7 +25,7 @@ signUpSubmit.addEventListener('click', () => {
         user.email = signUpEmail.value;
         user.password = signUpPassword.value;
         console.log(user)
-
+        window.location.href = './initSetup.html'
     } else {
         alert('Please Fill out the Empty Fields')
     }

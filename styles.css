@@ -40,7 +40,7 @@ form {
 
 #description {
     margin-left: 550px;
-    
+
 }
 
 .likes {
@@ -129,4 +129,8 @@ form {
 
 #adrenaline {
     margin-left: 119px;
+}
+
+#loginCard {
+    margin-top: 250px;
 }
