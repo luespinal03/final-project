@@ -34,12 +34,13 @@ form {
 }
 
 #questionaire {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 550px;
 }
 
 #description {
     margin-left: 550px;
+    
 }
 
 .likes {
@@ -71,11 +72,11 @@ form {
 }
 
 #dancing {
-    margin-left: 136px;
+    margin-left: 145px;
 }
 
 #athlete {
-    margin-left: 142px;
+    margin-left: 151px;
 }
 
 #music {
@@ -83,7 +84,7 @@ form {
 }
 
 #traveling {
-    margin-left: 113px;
+    margin-left: 122px;
 }
 
 #firstColumn {
@@ -104,4 +105,28 @@ form {
 
 #fifthColumn {
     font-size: larger;
+}
+
+#takeMetoMyPage {
+    margin-left: 900px;
+}
+
+#filmProd {
+    margin-left: 130px;
+}
+
+#crypto {
+    margin-left: 127px;
+}
+
+#raver {
+    margin-left: 128px;
+}
+
+#science {
+    margin-left: 112px;
+}
+
+#adrenaline {
+    margin-left: 119px;
 }
