@@ -30,7 +30,7 @@ let user = {}
 let likeItems = [];
 let likes = document.querySelectorAll('.likes input')
 
-console.log(user1)
+console.log('user1')
 console.log(loginSubmit)
 console.log(signUpSubmit)
 
@@ -81,10 +81,12 @@ try {
     console.log(error)
 }
 
-console.log(dropDownItems.innerText);
+console.log(dropDownItems);
 //custom page
-// try {
-//     dropDownItems.addEventListener('mouseover', () => {
-//         dropDownItems.classList.add("active")
-//     })
-// }
+try {
+    dropDownItems.addEventListener('mouseover', () => {
+        dropDownItems.classList.add("text-active")
+    })
+} catch (error) {
+    console.log(error)
+}
