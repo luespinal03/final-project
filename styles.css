@@ -134,3 +134,9 @@ form {
 #loginCard {
     margin-top: 250px;
 }
+
+#profilePic {
+    margin-top: -640px;
+    margin-left: 1280px;
+    margin-bottom: 1000px;
+}

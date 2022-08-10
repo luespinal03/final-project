@@ -11,6 +11,10 @@ const loginPassword = document.querySelector('#loginPassword')
 //initial setup page
 const takeMeButton = document.querySelector('#takeMetoMyPage')
 
+//custom page/////
+let customProfileCardLikes = document.querySelector("customProfileCardLikes")
+const dropDownItems = document.querySelectorAll('#sideNav li')
+
 //////users//////////
 let user1 = {
     email: 'luisespinal296@yahoo.com',
@@ -68,7 +72,7 @@ try {
         console.log('yes')
         if ((loginEmail.value === user1.email && loginPassword.value === user1.password) || (loginEmail.value === user2.email && loginPassword.value === user2.password)) {
             console.log('we do it?')
-        window.location.href = './customProfile.html'
+            window.location.href = './customProfile.html'
         } else {
             alert('Please Fill out the Empty Fields')
         }
@@ -77,3 +81,10 @@ try {
     console.log(error)
 }
 
+console.log(dropDownItems.innerText);
+//custom page
+// try {
+//     dropDownItems.addEventListener('mouseover', () => {
+//         dropDownItems.classList.add("active")
+//     })
+// }
