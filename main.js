@@ -13,7 +13,7 @@ const takeMeButton = document.querySelector('#takeMetoMyPage')
 
 //custom page/////
 let customProfileCardLikes = document.querySelector("customProfileCardLikes")
-const dropDownItems = document.querySelectorAll('#sideNav li')
+const dropDownItems = document.querySelectorAll('#sideNav a')
 
 //////users//////////
 let user1 = {
@@ -28,7 +28,7 @@ let user = {}
 ///////////////////
 //initSetup stuff
 let likeItems = [];
-let likes = document.querySelectorAll('.likes input')
+let likes = document.querySelectorAll('.likes .likedItems')
 
 console.log('user1')
 console.log(loginSubmit)
@@ -81,12 +81,16 @@ try {
     console.log(error)
 }
 
-console.log(dropDownItems);
 //custom page
 try {
-    dropDownItems.addEventListener('mouseover', () => {
-        dropDownItems.classList.add("text-active")
-    })
+    for (let i = 0; i < dropDownItems.length; i++) {
+        dropDownItems[i].addEventListener('mouseenter', () => {
+            dropDownItems[i].classList.replace("text-white", "text-active")
+        })
+        dropDownItems[i].addEventListener('mouseout', () => {
+            dropDownItems[i].classList.replace("text-active", "text-white")
+        })
+    }
 } catch (error) {
     console.log(error)
 }
