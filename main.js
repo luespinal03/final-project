@@ -23,27 +23,57 @@ let user2 = {
 let user = {}
 ///////////////////
 //initSetup stuff
+let likeItems = [];
 let likes = document.querySelectorAll('.likes input')
 
+console.log(user1)
+console.log(loginSubmit)
+console.log(signUpSubmit)
 
-signUpSubmit.addEventListener('click', () => {
-    if (signUpEmail.value !== '' && signUpPassword.value !== '') {
-        user.email = signUpEmail.value;
-        user.password = signUpPassword.value;
-        console.log(user)
-        window.location.href = './initSetup.html'
-    } else {
-        alert('Please Fill out the Empty Fields')
-    }
-});
+try {
+    signUpSubmit.addEventListener('click', () => {
+        if (signUpEmail.value !== '' && signUpPassword.value !== '') {
+            user.email = signUpEmail.value;
+            user.password = signUpPassword.value;
+            console.log(user)
+            window.location.href = './initSetup.html'
+        } else {
+            alert('Please Fill out the Empty Fields')
+        }
+    });
+} catch (error) {
+    console.log(error)
+}
 
 
-//login page/////////////////
-loginSubmit.addEventListener('click', () => {
-    if ((loginEmail.value === user1.email && loginPassword.value === user1.password) || (loginEmail.value === user2.email && loginPassword.value === user2.password)) {
-        console.log('we do it?')
-        window.location = './customProfile.html'
-    } else {
-        alert('Please Fill out the Empty Fields')
-    }
-});
+
+try {
+    takeMeButton.addEventListener('click', () => {
+        if (likes.checked === true) {
+            likeItems.push(likes.checked)
+            console.log(likeItems)
+            window.location.href = './customProfile.html'
+        } else {
+            window.location.href = './customProfile.html'
+        }
+    });
+} catch (error) {
+    console.log(error);
+}
+
+
+
+try {
+    loginSubmit.addEventListener('click', () => {
+        console.log('yes')
+        if ((loginEmail.value === user1.email && loginPassword.value === user1.password) || (loginEmail.value === user2.email && loginPassword.value === user2.password)) {
+            console.log('we do it?')
+        window.location.href = './customProfile.html'
+        } else {
+            alert('Please Fill out the Empty Fields')
+        }
+    });
+} catch (error) {
+    console.log(error)
+}
+
