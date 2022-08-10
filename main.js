@@ -28,7 +28,7 @@ let user = {}
 ///////////////////
 //initSetup stuff
 let likeItems = [];
-let likes = document.querySelectorAll('.likes .likedItems')
+let likes = document.querySelectorAll('.likes input')
 
 console.log('user1')
 console.log(loginSubmit)
@@ -53,18 +53,21 @@ try {
 
 try {
     takeMeButton.addEventListener('click', () => {
-        if (likes.checked === true) {
-            likeItems.push(likes.checked)
-            console.log(likeItems)
-            window.location.href = './customProfile.html'
-        } else {
-            window.location.href = './customProfile.html'
+        for (let i = 0; i < likes.length; i++) {
+            if (likes[i].checked === true) {
+                likeItems.push(likes[i].id)
+                console.log(likeItems)
+                window.location.href = './customProfile.html'
+
+            } else {
+                window.location.href = './customProfile.html'
+            }
         }
     });
 } catch (error) {
     console.log(error);
 }
-
+console.log(likeItems)
 
 
 try {
