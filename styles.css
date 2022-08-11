@@ -136,10 +136,15 @@ form {
 }
 
 #profilePic {
-    margin-top: -960px;
+    margin-top: -400px;
     margin-left: 1600px;
     margin-bottom: 500px;
 }
 
 @media screen and (max-width: 700px),
 screen and (max-height: 700px) {}
+
+#broads {
+    margin-left: 800px;
+    margin-top: -600px;
+}
