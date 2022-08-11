@@ -101,7 +101,7 @@ console.log(likeItems)
 try {
     loginSubmit.addEventListener('click', () => {
         console.log('yes')
-        if ((loginUserName.value === user1.userName && loginPassword.value === user1.password) || (loginUserName.value === user2.userName && loginPassword.value === user2.password)) {
+        if ((loginUserName.value.toLowerCase() === user1.userName.toLowerCase() && loginPassword.value.toLowerCase() === user1.password.toLowerCase()) || (loginUserName.value.toLowerCase() === user2.userName.toLowerCase() && loginPassword.value.toLowerCase() === user2.password.toLowerCase())) {
             console.log('we do it?')
             window.location.href = './customProfile.html'
         } else {
