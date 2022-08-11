@@ -33,11 +33,11 @@ try {
 
 //////users//////////
 let user1 = {
-    userName: 'luisespinal296@yahoo.com',
+    userName: 'espinal03',
     password: 'thisbetterwork'
 }
 let user2 = {
-    userName: 'claytonses@yahoo.com',
+    userName: 'Stealth',
     password: 'test123'
 }
 let user = {}
@@ -47,8 +47,6 @@ let likeItems = [];
 let likes = document.querySelectorAll('.likes input')
 
 console.log('user1')
-console.log(loginSubmit)
-console.log(signUpSubmit)
 
 try {
     signUpSubmit.addEventListener('click', () => {
