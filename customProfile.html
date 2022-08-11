@@ -16,6 +16,14 @@
 
 <body>
 
+    <style>
+        body {
+            background-image: url('./images/blueflower.jpg');
+        }
+    </style>
+
+
+
 
     <div id="sideNav" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -98,18 +106,15 @@
 
 
     <div>
-        <p id="broads">
+        <p id="statusSection">
             <br>
             <input id="status" placeholder="Write something..." autocomplete="off">
-            <button type="button" class="rounded-pill bg-primary text-light">Post</button>
+            <button id="postButton" type="button" class="rounded-pill bg-primary text-light">Post</button>
         </p>
     </div>
-
-    <!-- <div id="broads" class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Tell us what'a happening!"
-            aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-    </div> -->
+    <div id="statusPost" class="card card-body">
+        <p>W.e user posts will display here</p>
+    </div>
 
 
 

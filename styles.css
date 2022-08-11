@@ -144,7 +144,16 @@ form {
 @media screen and (max-width: 700px),
 screen and (max-height: 700px) {}
 
-#broads {
+#statusSection {
     margin-left: 800px;
-    margin-top: -600px;
+    margin-top: -700px;
+}
+
+#statusPost {
+    margin-left: 600px;
+    margin-right: 400px
+}
+
+#status {
+    font-size: larger;
 }
