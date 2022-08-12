@@ -128,3 +128,12 @@ try {
 } catch (error) {
     console.log(error)
 }
+
+
+
+
+
+
+/**********************************************************************
+ *  SECTION BELOW THIS POINT CORRESPONDS TO SPOTIFY API TRANSACTIONS  *
+ **********************************************************************/
