@@ -34,7 +34,7 @@ try {
 //////users//////////
 let user1 = {
     userName: 'espinal03',
-    password: 'thisbetterwork'
+    password: 'test123'
 }
 let user2 = {
     userName: 'Stealth',
@@ -98,12 +98,15 @@ try {
 console.log(likeItems)
 
 
+// this controls event listener for submit button on login page. 
 try {
     loginSubmit.addEventListener('click', () => {
         console.log('yes')
-        if ((loginUserName.value.toLowerCase() === user1.userName.toLowerCase() && loginPassword.value.toLowerCase() === user1.password.toLowerCase()) || (loginUserName.value.toLowerCase() === user2.userName.toLowerCase() && loginPassword.value.toLowerCase() === user2.password.toLowerCase())) {
-            console.log('we do it?')
-            window.location.href = './customProfile.html'
+        if (loginUserName.value.toLowerCase() === user1.userName.toLowerCase() && loginPassword.value.toLowerCase() === user1.password.toLowerCase()) {
+            window.location.href = './espinal.html'
+        } else if (loginUserName.value.toLowerCase() === user2.userName.toLowerCase() && loginPassword.value.toLowerCase() === user2.password.toLowerCase()) {
+            // console.log('we do it?')
+            window.location.href = './stealth.html'
         } else {
             alert('Please Fill out the Empty Fields')
         }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Stealth's page</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-image: url('./images/blueflower.jpg');
+        }
+    </style>
+
+
+
+
+    <div id="sideNav" class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">yourSpace</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <!-- class="nav-link text-active" -->
+                <a href="./customProfile.html" class="nav-link text-white" aria-current="page">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    DashBoard
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Messages
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Friends
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <div>
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1"
+                aria-expanded="false">
+                <img src="./images/spotify-logo2.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                <strong>Spotify</strong>
+            </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>For career opportunities visit:</div>
+        <a href="">yourspace.com/login/careers</a>
+        <br>
+        <a href="">Privacy Terms</a>
+        <a href="">Do-Not-Sell My Personal Information</a>
+        <a href="">Contact Us</a>
+    </div>
+
+
+    <div>
+        <p id="statusSection">
+            <br>
+            <input id="status" placeholder="Write something..." autocomplete="off">
+            <button id="postButton" type="button" class="rounded-pill bg-primary text-light">Post</button>
+        </p>
+    </div>
+    <div id="statusPost" class="card card-body">
+        <p>W.e user posts will display here</p>
+    </div>
+
+
+
+    <!-- Profile pic card -->
+    <div id="profilePic" class="card" style="width: 18rem;">
+        <img src="./images/johnDoe.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">John Doe</h5>
+            <!--  -->
+            <p id="customProfileCardLikes" class="card-text">where does this go?</p>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
