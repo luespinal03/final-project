@@ -49,13 +49,14 @@ let likes = document.querySelectorAll('.likes input')
 console.log('user1')
 
 try {
-    signUpSubmit.addEventListener('click', () => {
+    signUpSubmit.addEventListener('click', () => { //all of this is done on sign up button click
         localStorage.clear();
+        //if value of sign up intputs are not equal to empty string
         if (signUpUserName.value !== '' && signUpPassword.value !== '') {
-            user.userName = signUpUserName.value;
+            user.userName = signUpUserName.value; //user object creates key value pairs
             user.password = signUpPassword.value;
             console.log(user)
-            localStorage.setItem('user', JSON.stringify(user));
+            localStorage.setItem('user', JSON.stringify(user)); //local storage takes everything in as string
             window.location.href = './initSetup.html'
         } else {
             alert('Please Fill out the Empty Fields')
@@ -65,13 +66,13 @@ try {
     console.log(error);
 }
 try {
-    let localLiked = localStorage.getItem('liked');
-    let localUser = localStorage.getItem('user');
+    let localLiked = localStorage.getItem('liked'); //our liked items "initSetup" that are stored on localstorage are turning equalling a variable for later
+    let localUser = localStorage.getItem('user'); //^^ same but from our signup input
     if (localLiked !== null) {
-        user = JSON.parse(localUser)
-        likeItems = JSON.parse(localLiked);
-        customProfileCardLikes.innerText = `Liked: ${likeItems}`
-        cardName.innerText = user.userName;
+        user = JSON.parse(localUser) //turning stringified user info back to an object
+        likeItems = JSON.parse(localLiked); //turning stringified liked items back into array
+        customProfileCardLikes.innerText = `Liked/Hobbies: ${likeItems}`
+        cardName.innerText = user.userName; //^^ innertext of the card is equalling our localstorage jsond info from sign up and setup
     }
 } catch (error) {
     console.log(error);
@@ -82,13 +83,13 @@ try {
     takeMeButton.addEventListener('click', () => {
         console.log('hi')
         for (let i = 0; i < likes.length; i++) {
-            if (likes[i].checked === true) {
-                likeItems.push(likes[i].value)
+            if (likes[i].checked === true) { //if liked items [i] meaning it checks all of them are .checked true then 
+                likeItems.push(likes[i].value) //push to likeItems array
                 console.log(likeItems)
             }
         }
-        localStorage.setItem('liked', JSON.stringify(likeItems));
-        window.location.href = './customProfile.html'
+        localStorage.setItem('liked', JSON.stringify(likeItems)); //setting our likeItems array to localStorage as a string
+        window.location.href = './customProfile.html' //redirecting to new page on click after doing other stuff
 
 
     });
@@ -117,8 +118,8 @@ try {
 
 //custom page
 try {
-    for (let i = 0; i < dropDownItems.length; i++) {
-        dropDownItems[i].addEventListener('mouseenter', () => {
+    for (let i = 0; i < dropDownItems.length; i++) { //for loop for ALL of the drop down items on left nav bbar
+        dropDownItems[i].addEventListener('mouseenter', () => { //mouse enter and out changing class to change color from BS
             dropDownItems[i].classList.replace("text-white", "text-active")
         })
         dropDownItems[i].addEventListener('mouseout', () => {
@@ -137,3 +138,31 @@ try {
 /**********************************************************************
  *  SECTION BELOW THIS POINT CORRESPONDS TO SPOTIFY API TRANSACTIONS  *
  **********************************************************************/
+
+let spotifyButton = document.querySelector('#spotifyButton');
+let spotifyApi = 'https: //api.spotify.com/v1';
+// Client ID, the unique identifier of your app.
+// yourSpace spotify client ID = 684c1cf2db91417a9dd7cd68e936bfec
+
+// Client Secret, the key you will use to authorize your Web API or SDK calls.
+// Client Secret 01496028e58241c09e8b87f68f651a04
+
+
+// old lady purple though like buick purple
+
+
+spotifyButton.addEventListener('click', () => {
+    let readJeopardyData = async () => {
+        let rawSpotifyData = await fetch('https: //api.spotify.com/v1');
+        let data = await rawSpotifyData.json();
+        console.log(data);
+        // let groupedData = _.groupBy(data, "value");
+    }
+})
+
+// let readJeopardyData = async () => {
+//     let rawSpotifyData = await fetch('https: //api.spotify.com/v1');
+//     let data = await rawSpotifyData.json();
+//     console.log(data);
+//     // let groupedData = _.groupBy(data, "value");
+// }
