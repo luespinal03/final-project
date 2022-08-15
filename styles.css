@@ -137,7 +137,7 @@ form {
 
 #profilePic {
     border: 5px solid black;
-    margin-top: -470px;
+    margin-top: -400px;
     margin-left: 2200px;
     margin-bottom: 500px;
 }
@@ -146,11 +146,40 @@ form {
 screen and (max-height: 700px) {}
 
 #statusSection {
-    margin-left: 800px;
+    margin-left: 1100px;
+    margin-top: -800px;
+}
+
+#statusSectionStealth {
+    margin-left: 1100px;
+    margin-top: -800px;
+}
+
+#espinalStatusSection {
+    margin-left: 900px;
     margin-top: -700px;
 }
 
+#espinalProfilePic {
+    border: 5px solid black;
+    margin-top: -470px;
+    margin-left: 2200px;
+    margin-bottom: 500px;
+}
+
+#espinalStatusPost {
+    margin-top: 0px;
+    margin-left: 600px;
+    margin-right: 400px
+}
+
 #statusPost {
+    margin-top: 0px;
+    margin-left: 600px;
+    margin-right: 400px
+}
+
+#statusPostStealth {
     margin-top: 200px;
     margin-left: 600px;
     margin-right: 400px
@@ -160,10 +189,8 @@ screen and (max-height: 700px) {}
     font-size: larger;
 }
 
-
-#SDK {
-    margin-left: px;
-    margin-top: px;
+#statusStealth {
+    font-size: larger;
 }
 
 #stealthTitle {
