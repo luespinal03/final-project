@@ -72,23 +72,67 @@
                 <img src="./images/spotify-logo2.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
                 <strong>Spotify</strong>
             </a>
+            <br>
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/0yotOi6EFaBal5Gy7YVcuI?utm_source=generator&theme=0"
+                width="100%" height="80" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <br>
+            <div id="SDK">
+
+
+                <script>
+                    window.onSpotifyWebPlaybackSDKReady = () => {
+                        const token = '[My access token]';
+                        const player = new Spotify.Player({
+                            name: 'Web Playback SDK Quick Start Player',
+                            getOAuthToken: cb => {
+                                cb(token);
+                            },
+                            volume: 0.5
+                        });
+
+                        // Ready
+                        player.addListener('ready', ({
+                            device_id
+                        }) => {
+                            console.log('Ready with Device ID', device_id);
+                        });
+
+                        // Not Ready
+                        player.addListener('not_ready', ({
+                            device_id
+                        }) => {
+                            console.log('Device ID has gone offline', device_id);
+                        });
+
+                        player.addListener('initialization_error', ({
+                            message
+                        }) => {
+                            console.error(message);
+                        });
+
+                        player.addListener('authentication_error', ({
+                            message
+                        }) => {
+                            console.error(message);
+                        });
+
+                        player.addListener('account_error', ({
+                            message
+                        }) => {
+                            console.error(message);
+                        });
+
+                        document.getElementById('togglePlay').onclick = function () {
+                            player.togglePlay();
+                        };
+
+                        player.connect();
+                    }
+                </script>
+            </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <br>
         <br>
         <br>
@@ -126,7 +170,7 @@
         </div>
     </div>
     <div>
-        <img src="./images/LLama.gif" class="bottom-0 w-100">
+        <img id="bottomImgStealth" src="./images/LLama.gif" style="width: 2545px">
     </div>
 
 

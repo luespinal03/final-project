@@ -136,8 +136,8 @@ form {
 }
 
 #profilePic {
-    margin-top: -370px;
-    margin-left: 1600px;
+    margin-top: -470px;
+    margin-left: 2200px;
     margin-bottom: 500px;
 }
 
@@ -157,3 +157,13 @@ screen and (max-height: 700px) {}
 #status {
     font-size: larger;
 }
+
+
+#SDK {
+    margin-left: px;
+    margin-top: px;
+}
+
+/* #bottomImgStealth {
+    padding-bottom: 500px;
+} */

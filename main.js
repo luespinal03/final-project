@@ -146,23 +146,6 @@ let spotifyApi = 'https: //api.spotify.com/v1';
 
 // Client Secret, the key you will use to authorize your Web API or SDK calls.
 // Client Secret 01496028e58241c09e8b87f68f651a04
-
-
-// old lady purple though like buick purple
-
-
 spotifyButton.addEventListener('click', () => {
-    let readJeopardyData = async () => {
-        let rawSpotifyData = await fetch('https: //api.spotify.com/v1');
-        let data = await rawSpotifyData.json();
-        console.log(data);
-        // let groupedData = _.groupBy(data, "value");
-    }
-})
 
-// let readJeopardyData = async () => {
-//     let rawSpotifyData = await fetch('https: //api.spotify.com/v1');
-//     let data = await rawSpotifyData.json();
-//     console.log(data);
-//     // let groupedData = _.groupBy(data, "value");
-// }
+})
