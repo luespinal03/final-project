@@ -20,7 +20,17 @@ let status = document.querySelector('#status');
 let statusPost = document.querySelector('#statusPost');
 let cardName = document.querySelector('.card-title')
 
+let statusPostStealth = document.querySelector('#statusPostStealth')
+let statusStealth = document.querySelector('#statusStealth')
+let postButtonStealth = document.querySelector('#postButtonStealth');
+
+let espinalStatus = document.querySelector('#espinalStatus');
+let espinalPostButton = document.querySelector('#espinalPostButton');
+let espinalStatusPost = document.querySelector('#espinalStatusPost');
+
 // This controls the status post button and where it displays (right undeneath it)
+
+// Custom page status post button
 try {
     postButton.addEventListener('click', () => {
         statusPost.innerText = status.value;
@@ -29,6 +39,29 @@ try {
 } catch (error) {
     console.log(error);
 }
+
+// Stealth's page status post button
+try {
+    postButtonStealth.addEventListener('click', () => {
+        statusPostStealth.innerText = statusStealth.value;
+        statusStealth.value = ''
+    });
+} catch (error) {
+    console.log(error);
+}
+
+// Espinal's page status post button
+try {
+    espinalPostButton.addEventListener('click', () => {
+        espinalStatusPost.innerText = espinalStatus.value;
+        espinalStatus.value = ''
+    });
+} catch (error) {
+    console.log(error);
+}
+
+
+
 
 
 //////users//////////
