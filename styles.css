@@ -17,7 +17,7 @@
 
 #words {
     font-family: -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    margin-left: 550px;
+    margin-left: 840px;
     font-size: 50px;
     color: #ffe169;
 }
@@ -52,7 +52,7 @@ form {
 }
 
 #blogging {
-    margin-left: 180px;
+    margin-left: 182px;
 }
 
 #reading {
@@ -60,7 +60,7 @@ form {
 }
 
 #entrepreneurship {
-    margin-left: 82px;
+    margin-left: 75px;
 }
 
 #tech {
@@ -76,15 +76,15 @@ form {
 }
 
 #athlete {
-    margin-left: 151px;
+    margin-left: 153px;
 }
 
 #music {
-    margin-left: 65px;
+    margin-left: 66px;
 }
 
 #traveling {
-    margin-left: 121px;
+    margin-left: 126px;
 }
 
 #firstColumn {
@@ -120,7 +120,7 @@ form {
 }
 
 #raver {
-    margin-left: 62px;
+    margin-left: 60px;
 }
 
 #science {
@@ -128,7 +128,7 @@ form {
 }
 
 #adrenaline {
-    margin-left: 119px;
+    margin-left: 121px;
 }
 
 #loginCard {
@@ -199,4 +199,11 @@ screen and (max-height: 700px) {}
 
 #stealthLikes {
     color: white;
+}
+
+#landingCard {
+    /* margin-left: 13vw; */
+    margin-left: auto;
+    margin-right: auto;
+
 }
