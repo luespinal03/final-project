@@ -1,23 +1,8 @@
-#mj {
-    height: 400px;
-    width: 350px;
-}
-
-#nwa {
-    height: 400px;
-    width: 450px;
-    margin-right: 30px;
-
-}
-
-#jlo {
-    height: 400px;
-    width: 375px
-}
-
 #words {
     font-family: -apple-system, "system-ui", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    margin-left: 840px;
+    width: 100%;
+    text-align: center;
+    height: auto;
     font-size: 50px;
     color: #ffe169;
 }
@@ -131,10 +116,19 @@ form {
     margin-left: 121px;
 }
 
+
 #loginCard {
-    margin-top: 250px;
-    margin-left: 355px;
+    width: 100%;
+    height: auto;
+    margin-left: 40%;
+    margin-top: 10%
 }
+
+/* 
+#loginCardBody {
+    width: 100%;
+    height: auto;
+} */
 
 #profilePic {
     border: 5px solid black;
@@ -143,8 +137,8 @@ form {
     margin-bottom: 500px;
 }
 
-@media screen and (max-width: 700px),
-screen and (max-height: 700px) {}
+@media screen and (max-width: 900px),
+screen and (max-height: 900px) {}
 
 #statusSection {
     margin-left: 1100px;
@@ -156,28 +150,39 @@ screen and (max-height: 700px) {}
     margin-top: -800px;
 }
 
-#espinalStatusSection {
-    margin-left: 900px;
-    margin-top: -700px;
+#espinalBody {
+    /* width: 400px; */
+    width: calc(100% - 280px);
+    height: auto;
+    min-height: 677px;
+}
+
+#statusArea {
+    /* width: calc(100% - 280px);
+    height: auto; */
+    margin-left: 35%;
+    margin-top: -28%;
 }
 
 #espinalProfilePic {
     border: 5px solid black;
-    margin-top: -470px;
-    margin-left: 2200px;
-    margin-bottom: 500px;
+    /* width: calc(100% - 20%); */
+    height: auto;
+    margin-left: 64%;
+    margin-bottom: 0%;
+    margin-top: -57%;
+    margin-right: 50%;
 }
 
 #espinalStatusPost {
-    margin-top: 0px;
-    margin-left: 600px;
-    margin-right: 400px
+    width: 60%;
+    height: auto;
 }
 
 #statusPost {
-    margin-top: 0px;
+    /* margin-top: 0px;
     margin-left: 600px;
-    margin-right: 400px
+    margin-right: 400px */
 }
 
 #statusPostStealth {
@@ -207,4 +212,19 @@ screen and (max-height: 700px) {}
     margin-left: auto;
     margin-right: auto;
 
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+#sideNav {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 3;
+    color: white;
+    background: #212529;
+    width: 20%;
 }
