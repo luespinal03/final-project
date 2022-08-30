@@ -164,22 +164,23 @@ body {
     /* width: calc(100% - 280px);
     height: auto; */
     margin-left: 35%;
-    margin-top: -28%;
+    margin-top: 0%;
 }
 
 #espinalProfilePic {
     border: 5px solid black;
     /* width: calc(100% - 20%); */
+    position: relative;
     height: auto;
-    margin-left: 78.5%;
+    margin-left: 83%;
     margin-bottom: 0%;
-    margin-top: -465px;
-    margin-right: 50%;
+    margin-top: 0px;
 }
 
 #espinalStatusPost {
-    width: 60%;
+    width: 30%;
     height: auto;
+    margin-left: 30%;
 }
 
 #statusPost {
@@ -222,12 +223,13 @@ body {
 
 #sideNav {
     display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
+    flex-direction: row;
+    flex-shrink: 0px;
     padding: 3;
     color: white;
     background: #212529;
-    width: 280px;
+    width: 80px;
+
 }
 
 #initBody {
