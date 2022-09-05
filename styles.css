@@ -32,95 +32,178 @@ form {
     margin-left: 550px;
 }
 
-#movies {
-    margin-left: 20%;
-}
 
-#blogging {
-    margin-left: 20.7%;
-}
+/* First column */
 
-#reading {
-    margin-left: 18.6%;
-}
-
-#entrepreneurship {
-    margin-left: 9.5%;
-}
-
-#tech {
-    margin-left: 20.1%;
-}
-
-#gaming {
-    margin-left: 150px;
-}
-
-#dancing {
-    margin-left: 145px;
-}
-
-#athlete {
-    margin-left: 153px;
-}
-
-#music {
-    margin-left: 66px;
-}
-
-#traveling {
-    margin-left: 13.8%;
-}
-
-#firstColumn {
+#firstRow {
     font-size: larger;
 }
 
-#secondColumn {
+.dogs {
+    display: inline;
+}
+
+.movies {
+    display: inline;
+    position: relative;
+    margin-left: 100px;
+}
+
+.gamer {
+    display: inline;
+    position: relative;
+    margin-left: 100px;
+}
+
+.filmProd {
+    display: inline;
+    position: relative;
+    margin-left: 100px;
+}
+
+/* First column */
+
+
+
+/* Second Column */
+
+#secondRow {
     font-size: larger;
 }
 
-#thirdColumn {
+.cats {
+    display: inline;
+}
+
+.blogger {
+    display: inline;
+    position: relative;
+    margin-left: 105px;
+}
+
+.dancer {
+    display: inline;
+    position: relative;
+    margin-left: 95px;
+}
+
+.crypto {
+    display: inline;
+    position: relative;
+    margin-left: 97px;
+}
+
+/* Second Column */
+
+
+
+/* Third Column */
+#thirdRow {
     font-size: larger;
 }
 
-#fourthColumn {
+.coffee {
+    display: inline;
+}
+
+.reading {
+    display: inline;
+    position: relative;
+    margin-left: 88px;
+}
+
+.sports {
+    display: inline;
+    position: relative;
+    margin-left: 92px;
+}
+
+.raver {
+    display: inline;
+    position: relative;
+    margin-left: 101px;
+}
+
+/* Third Column */
+
+
+
+
+/* Fourth Column */
+#fourthRow {
     font-size: larger;
 }
 
-#fifthColumn {
+.acting {
+    display: inline;
+}
+
+.music {
+    display: inline;
+    position: relative;
+    margin-left: 91px;
+}
+
+.science {
+    display: inline;
+    position: relative;
+    margin-left: 110px;
+}
+
+.entrepreneurship {
+    display: inline;
+    position: relative;
+    margin-left: 90px;
+}
+
+/* Fourth Column */
+
+
+
+/* Fifth Column */
+
+#fifthRow {
     font-size: larger;
 }
+
+.diy {
+    display: inline;
+}
+
+.tech {
+    display: inline;
+    position: relative;
+    margin-left: 101px;
+
+}
+
+.traveling {
+    display: inline;
+    position: relative;
+    margin-left: 70px;
+}
+
+.adrenaline {
+    display: inline;
+    position: relative;
+    margin-left: 92px;
+}
+
+/* Fifth Column */
+
+
+
+
 
 #takeMetoMyPage {
     margin-left: 900px;
 }
 
-#filmProd {
-    margin-left: 130px;
-}
-
-#crypto {
-    margin-left: 127px;
-}
-
-#raver {
-    margin-left: 60px;
-}
-
-#science {
-    margin-left: 112px;
-}
-
-#adrenaline {
-    margin-left: 121px;
-}
-
-
 #loginCard {
     width: 100%;
+    position: absolute;
     height: auto;
-    margin-left: 40%;
+    margin-left: 43%;
     margin-top: 10%
 }
 
@@ -133,12 +216,13 @@ form {
 #profilePic {
     border: 5px solid black;
     /* width: calc(100% - 20%); */
+    position: relative;
     height: auto;
-    margin-left: 78.5%;
+    margin-left: 83%;
     margin-bottom: 0%;
-    margin-top: -550px;
-    margin-right: 50%;
+    margin-top: 0px;
 }
+
 
 @media screen and (max-width: 900px),
 screen and (max-height: 900px) {}
@@ -235,5 +319,4 @@ body {
 #initBody {
     width: 100%;
     height: auto;
-    margin-left: -20%;
 }
